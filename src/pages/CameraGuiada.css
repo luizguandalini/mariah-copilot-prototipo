@@ -1,0 +1,319 @@
+.camera-container {
+  min-height: 100vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.camera-header {
+  background: linear-gradient(135deg, var(--primary-purple), var(--primary-purple-dark));
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.camera-header .btn-back {
+  background: none;
+  border: none;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.header-info {
+  text-align: center;
+  flex: 1;
+}
+
+.header-info h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  color: white;
+}
+
+.header-info p {
+  font-size: 13px;
+  margin: 4px 0 0 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-skip {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.progress-bars {
+  background: var(--background-white);
+  padding: 16px 20px;
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: var(--border-gray);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-purple), var(--primary-purple-dark));
+  transition: width 0.3s ease;
+}
+
+.progress-label {
+  font-size: 12px;
+  color: var(--text-gray);
+}
+
+.camera-view {
+  flex: 1;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  max-height: 400px;
+  position: relative;
+}
+
+.camera-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 40px;
+  text-align: center;
+}
+
+.camera-placeholder svg {
+  margin-bottom: 16px;
+}
+
+.camera-placeholder p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.camera-active {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.camera-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.camera-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.camera-error svg {
+  margin-bottom: 16px;
+  color: #FCD34D;
+}
+
+.camera-error p {
+  margin-bottom: 24px;
+  color: white;
+}
+
+.btn-retry {
+  background: white;
+  color: var(--text-dark);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.foto-preview {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.foto-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.foto-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.btn-action {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-refazer {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--text-dark);
+}
+
+.btn-confirmar {
+  background: linear-gradient(135deg, var(--primary-purple), var(--primary-purple-dark));
+  color: white;
+}
+
+.instrucoes-panel {
+  background-color: var(--background-white);
+  padding: 20px;
+  border-radius: 24px 24px 0 0;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.instrucao-card {
+  background: linear-gradient(135deg, #F3E8FF, #EDE9FE);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.instrucao-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--primary-purple), var(--primary-purple-dark));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.instrucao-content {
+  flex: 1;
+}
+
+.instrucao-content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.condicional-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.btn-condicional {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-sim {
+  background-color: var(--primary-purple);
+  color: white;
+}
+
+.btn-nao {
+  background-color: white;
+  color: var(--text-dark);
+  border: 2px solid var(--border-gray);
+}
+
+.fotos-coletadas {
+  margin-bottom: 20px;
+}
+
+.fotos-count {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-gray);
+  margin-bottom: 12px;
+}
+
+.fotos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 8px;
+}
+
+.foto-thumb {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid var(--border-gray);
+}
+
+.foto-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-capturar {
+  width: 100%;
+  background: linear-gradient(135deg, var(--primary-purple), var(--primary-purple-dark));
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-capturar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+}
+
+.btn-capturar:active {
+  transform: translateY(0);
+}
