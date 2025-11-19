@@ -31,11 +31,7 @@ const Login = () => {
 
         <div className="login-illustration">
           <div className="illustration-placeholder">
-            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="100" cy="100" r="80" fill="#F3E8FF" />
-              <circle cx="100" cy="90" r="30" fill="#8B5CF6" />
-              <path d="M70 130 Q70 110, 100 110 T130 130" stroke="#8B5CF6" strokeWidth="8" fill="none" />
-            </svg>
+            <img src="/mariah.png" alt="Mariah Copilot" className="mariah-illustration" />
           </div>
         </div>
 
